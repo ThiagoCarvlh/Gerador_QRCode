@@ -41,36 +41,37 @@ Simples assim.
 
 Feito rapidinho pra facilitar a vida. Se quiser melhorar algo, fique à vontade.
 
-🐧 Como Rodar no Linux
+## 🐧 Como Rodar no Linux
 
 Se você usa Linux, pode encontrar um erro de permissão ao tentar instalar as bibliotecas, devido à forma como o sistema gerencia as versões do Python. A melhor solução é usar um ambiente virtual para instalar as dependências de forma segura, sem afetar o resto do sistema.
 
-## Siga estes passos:
+## Siga estes passos: Instale o gerenciador de ambientes virtuais (se necessário):
 
-    Instale o gerenciador de ambientes virtuais (se necessário):
-    Bash
-
+```bash
 sudo apt install python3-venv
-
+```
 ## Crie o ambiente virtual na pasta do projeto:
-Bash
 
+```bash
 python3 -m venv venv
-
+```
 ## Ative o ambiente virtual:
-Bash
 
+```bash
 source venv/bin/activate
+```
 
 Você saberá que o ambiente está ativo quando (venv) aparecer no início da linha de comando.
 
 ## Instale as dependências do projeto dentro do ambiente virtual:
 Bash
 
+
+```bash
 pip install qrcode[pil]
+```
 
 ## Execute o script:
-Bash
 
     python main.py
 
